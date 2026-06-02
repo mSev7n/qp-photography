@@ -1182,3 +1182,31 @@ ul     { list-style: none; }
   .footer__grid > :first-child { grid-column: span 1; }
   .hero__stats { gap: var(--sp-sm) var(--sp-md); }
 }
+
+/* Real gallery images sit on top of the placeholder gradient cells */
+.gallery__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+  transition: transform 600ms var(--ease-out-expo);
+}
+.gallery__cell:hover .gallery__img { transform: scale(1.06); }
+.gallery__hover { z-index: 3; }
+
+/* Step visuals — booking process imagery */
+.hiw__step-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.92;
+  transition: transform 600ms var(--ease-out-expo), opacity 400ms;
+}
+.hiw__step:hover .hiw__step-img {
+  transform: scale(1.04);
+  opacity: 1;
+}
