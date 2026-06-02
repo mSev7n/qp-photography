@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QP Photography Studio — Lagos, Nigeria</title>
+  <meta name="description" content="Professional photography studio in Lakowe, Lagos. Corporate, events, family, headshots, maternity and more. 4.7★ rated with 44 reviews.">
+
+  <!-- Clash Display + Satoshi from Fontshare -->
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+
+  <!-- JetBrains Mono from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Splitting.js base styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/splitting@1.0.6/dist/splitting.css">
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="qp-photography.css">
+</head>
+<body>
+
+<!-- Scroll progress ribbon -->
+<div id="scroll-ribbon"></div>
+
+<!-- Navigation -->
+<nav class="nav" id="nav" role="navigation">
+  <div class="container">
+    <div class="nav__row">
+
+      <a href="#" class="nav__logo" aria-label="QP Photography Studio home">
+        <span class="nav__logo-mark" aria-hidden="true">QP</span>
+        QP Photography
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="#process">Process</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <div class="nav__cta-wrap">
+        <a href="https://wa.me/2348162905182" class="btn-primary" target="_blank" rel="noopener noreferrer">
+          Book a Session
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2.5 7H11.5M11.5 7L8 3.5M11.5 7L8 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile nav overlay -->
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+  <a href="#process"  class="m-link">Process</a>
+  <a href="#services" class="m-link">Services</a>
+  <a href="#gallery"  class="m-link">Gallery</a>
+  <a href="#reviews"  class="m-link">Reviews</a>
+  <a href="#faq"      class="m-link">FAQ</a>
+  <a href="https://wa.me/2348162905182" class="btn-primary m-link" target="_blank" rel="noopener noreferrer">
+    Book on WhatsApp
+  </a>
+</nav>
+
+
+<!-- Hero -->
+<section class="hero" id="hero" aria-labelledby="hero-headline">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero__vignette" aria-hidden="true"></div>
+
+  <div class="container" style="position:relative; z-index:2;">
+    <div class="hero__content">
+
+      <p class="hero__eyebrow">Lakowe, Lagos — Photography Studio</p>
+
+      <h1 class="hero__headline split-text" id="hero-headline" data-splitting>
+        Every Frame,<br>
+        <em>A Story</em><br>
+        Worth Keeping.
+      </h1>
+
+      <p class="hero__sub">
+        QP Photography Studio captures life's defining moments — from corporate headshots 
+        and newborns to family portraits and full-scale events — with cinematic clarity 
+        and a 4.7-star track record across Lagos.
+      </p>
+
+      <div class="hero__actions">
+        <a href="https://wa.me/2348162905182" class="btn-primary" target="_blank" rel="noopener noreferrer">
+          Book Your Session
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2.5 7H11.5M11.5 7L8 3.5M11.5 7L8 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <div class="hero__rating" aria-label="4.7 stars, 44 reviews">
+          <span class="hero__rating-stars" aria-hidden="true">★★★★★</span>
+          4.7 &nbsp;·&nbsp; 44 Reviews
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="hero__stats-bar" aria-hidden="true">
+    <div class="container">
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <div class="hero__stat-value">4.7<sup>★</sup></div>
+          <div class="hero__stat-label">Google Rating</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-value">44+</div>
+          <div class="hero__stat-label">Verified Reviews</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-value">6</div>
+          <div class="hero__stat-label">Service Types</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-value">48h</div>
+          <div class="hero__stat-label">Gallery Delivery</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Marquee strip -->
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee__track">
+    <!-- Duplicated for a seamless infinite loop -->
+    <span class="marquee__item">Corporate Photography<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Events & Parties<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Family & Group<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Headshots & Portraits<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Individual Photography<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Maternity & Newborn<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Studio & On-Location<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Corporate Photography<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Events & Parties<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Family & Group<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Headshots & Portraits<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Individual Photography<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Maternity & Newborn<span class="marquee__sep"></span></span>
+    <span class="marquee__item">Studio & On-Location<span class="marquee__sep"></span></span>
+  </div>
+</div>
+
+
+<!-- How It Works -->
+<section class="section" id="process" aria-labelledby="process-title">
+  <div class="container">
+
+    <p class="section-tag">The Process</p>
+    <h2 class="section-title split-text" id="process-title" data-splitting>
+      Booking to<br>beautiful gallery
+    </h2>
+    <p style="color: var(--text-secondary); max-width: 460px; line-height: 1.75;">
+      Three steps, no friction. We handle the creative direction — 
+      you just show up and be yourself.
+    </p>
+
+    <div style="margin-top: var(--sp-xl);">
+
+      <article class="hiw__step">
+        <div class="hiw__step-copy">
+          <div class="hiw__step-num" aria-hidden="true">01</div>
+          <p class="hiw__step-tag">Step One</p>
+          <h3 class="hiw__step-title">Choose a Package & Lock In Your Date</h3>
+          <p class="hiw__step-desc">
+            Pick your service — corporate, maternity, family, events, or headshots — and 
+            reach us via WhatsApp or phone. We'll confirm your slot at our Lakowe studio 
+            or agree on an on-location setup.
+          </p>
+        </div>
+        <div class="hiw__step-visual" aria-hidden="true">
+          <div class="hiw__step-swatch" style="background: linear-gradient(140deg, #18130e 0%, #2e2015 55%, #3e2e1a 100%);"></div>
+          <span class="hiw__step-badge">Booking</span>
+        </div>
+      </article>
+
+      <article class="hiw__step">
+        <div class="hiw__step-copy">
+          <div class="hiw__step-num" aria-hidden="true">02</div>
+          <p class="hiw__step-tag">Step Two</p>
+          <h3 class="hiw__step-title">Show Up — We Direct Everything</h3>
+          <p class="hiw__step-desc">
+            Arrive relaxed. Our team takes care of lighting, posing, and the full creative 
+            direction. We guide camera-shy subjects and capture genuine emotion — not stiff poses.
+          </p>
+        </div>
+        <div class="hiw__step-visual" aria-hidden="true">
+          <div class="hiw__step-swatch" style="background: linear-gradient(140deg, #0e1218 0%, #18222e 55%, #222e3a 100%);"></div>
+          <span class="hiw__step-badge">The Shoot</span>
+        </div>
+      </article>
+
+      <article class="hiw__step">
+        <div class="hiw__step-copy">
+          <div class="hiw__step-num" aria-hidden="true">03</div>
+          <p class="hiw__step-tag">Step Three</p>
+          <h3 class="hiw__step-title">Receive a Gallery, Ready to Share</h3>
+          <p class="hiw__step-desc">
+            Within 48–72 hours, you receive a professionally retouched gallery. 
+            Print-ready resolution, thoughtful editing — images that'll outlast the moment.
+          </p>
+        </div>
+        <div class="hiw__step-visual" aria-hidden="true">
+          <div class="hiw__step-swatch" style="background: linear-gradient(140deg, #141310 0%, #242218 55%, #302e14 100%);"></div>
+          <span class="hiw__step-badge">Delivery</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Benefits -->
+<section class="section benefits" id="services" aria-labelledby="benefits-title">
+  <div class="container">
+
+    <p class="section-tag">Why QP</p>
+    <h2 class="section-title split-text" id="benefits-title" data-splitting>
+      Built for every<br>milestone that matters
+    </h2>
+
+    <div class="benefits__grid" role="list">
+
+      <div class="benefit-card" role="listitem">
+        <div class="benefit-card__icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <rect x="2" y="6" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M18 9l4-2v10l-4-2" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="benefit-card__title">Studio & On-Location</h3>
+        <p class="benefit-card__desc">
+          Fully equipped studio in Lakowe or we travel to you. Events, outdoor 
+          portraits, corporate offices — our team adapts to any environment.
+        </p>
+      </div>
+
+      <div class="benefit-card" role="listitem">
+        <div class="benefit-card__icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="benefit-card__title">48–72 Hour Turnaround</h3>
+        <p class="benefit-card__desc">
+          No long waits. Professionally retouched images delivered in two to three 
+          days — ready to post, print, or present immediately.
+        </p>
+      </div>
+
+      <div class="benefit-card" role="listitem">
+        <div class="benefit-card__icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2l2.9 5.8 6.4.9-4.6 4.5 1.1 6.3L12 16.8l-5.8 2.7 1.1-6.3L2.7 8.7l6.4-.9z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="benefit-card__title">4.7★ Rated — 44 Reviews</h3>
+        <p class="benefit-card__desc">
+          Consistently rated excellent on Google by Lagos families, professionals, 
+          and brands. Results that speak louder than promises.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Gallery preview -->
+<section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+  <div class="container">
+
+    <p class="section-tag">The Work</p>
+    <h2 class="section-title split-text" id="gallery-title" data-splitting>
+      Moments that<br>outlast memory
+    </h2>
+
+    <div class="gallery__grid" role="list" aria-label="Photography portfolio samples">
+
+      <div class="gallery__cell" role="listitem" tabindex="0" aria-label="Family portrait sample">
+        <div class="gallery__fill"></div>
+        <div class="gallery__hover" aria-hidden="true">
+          <span class="gallery__genre">Family Portrait</span>
+        </div>
+      </div>
+
+      <div class="gallery__cell" role="listitem" tabindex="0" aria-label="Maternity session sample">
+        <div class="gallery__fill"></div>
+        <div class="gallery__hover" aria-hidden="true">
+          <span class="gallery__genre">Maternity</span>
+        </div>
+      </div>
+
+      <div class="gallery__cell" role="listitem" tabindex="0" aria-label="Newborn session sample">
+        <div class="gallery__fill"></div>
+        <div class="gallery__hover" aria-hidden="true">
+          <span class="gallery__genre">Newborn</span>
+        </div>
+      </div>
+
+      <div class="gallery__cell" role="listitem" tabindex="0" aria-label="Corporate headshot sample">
+        <div class="gallery__fill"></div>
+        <div class="gallery__hover" aria-hidden="true">
+          <span class="gallery__genre">Corporate</span>
+        </div>
+      </div>
+
+      <div class="gallery__cell" role="listitem" tabindex="0" aria-label="Event photography sample">
+        <div class="gallery__fill"></div>
+        <div class="gallery__hover" aria-hidden="true">
+          <span class="gallery__genre">Events</span>
+        </div>
+      </div>
+
+      <div class="gallery__cell" role="listitem" tabindex="0" aria-label="Individual portrait sample">
+        <div class="gallery__fill"></div>
+        <div class="gallery__hover" aria-hidden="true">
+          <span class="gallery__genre">Individual</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQ -->
+<section class="section faq" id="faq" aria-labelledby="faq-title">
+  <div class="container">
+
+    <p class="section-tag">FAQ</p>
+    <h2 class="section-title split-text" id="faq-title" data-splitting>
+      Questions we<br>hear most often
+    </h2>
+
+    <div class="faq__list" role="list">
+
+      <div class="faq__item" role="listitem">
+        <button class="faq__q" aria-expanded="false">
+          What photography services do you offer?
+          <span class="faq__icon-wrap" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </button>
+        <div class="faq__body" role="region">
+          <p class="faq__body-text">
+            We cover corporate photography, events and parties, family and group sessions, 
+            headshots and portraits, individual photography, and maternity and newborn shoots — 
+            both in our Lakowe studio and on-location across Lagos.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq__item" role="listitem">
+        <button class="faq__q" aria-expanded="false">
+          How do I book a session?
+          <span class="faq__icon-wrap" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </button>
+        <div class="faq__body" role="region">
+          <p class="faq__body-text">
+            The quickest way is via WhatsApp — tap any "Book" button on this page to connect directly. 
+            You can also call us on 0816 290 5182. We're open daily from 9am to 9pm.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq__item" role="listitem">
+        <button class="faq__q" aria-expanded="false">
+          Where exactly is the studio located?
+          <span class="faq__icon-wrap" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </button>
+        <div class="faq__body" role="region">
+          <p class="faq__body-text">
+            We're at Bus-Stop, T Jay Plaza, km42 Lekki–Epe Expressway, School Gate Street, 
+            Lakowe 105101, Lagos — about 1km from the Lakowe bus stop. We also travel for 
+            on-location shoots. Just tell us what you need.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq__item" role="listitem">
+        <button class="faq__q" aria-expanded="false">
+          How long until I get my edited photos?
+          <span class="faq__icon-wrap" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </button>
+        <div class="faq__body" role="region">
+          <p class="faq__body-text">
+            Standard turnaround is 48–72 hours after your session. Rush delivery is available 
+            for time-sensitive corporate or event needs — just flag it when booking and we'll 
+            accommodate.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq__item" role="listitem">
+        <button class="faq__q" aria-expanded="false">
+          Do you shoot outside the studio?
+          <span class="faq__icon-wrap" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </button>
+        <div class="faq__body" role="region">
+          <p class="faq__body-text">
+            Absolutely. We cover events, outdoor family shoots, corporate offices, and 
+            more across Lagos. Reach out via WhatsApp with your details — location, date, 
+            and service type — and we'll confirm logistics.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq__item" role="listitem">
+        <button class="faq__q" aria-expanded="false">
+          What should I wear to my session?
+          <span class="faq__icon-wrap" aria-hidden="true">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </button>
+        <div class="faq__body" role="region">
+          <p class="faq__body-text">
+            Solid, complementary tones work best for family and group shots. Business attire 
+            for corporate headshots. We'll share a prep guide when you book. Most importantly: 
+            come relaxed — we handle the rest.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Testimonials -->
+<section class="section testimonials" id="reviews" aria-labelledby="reviews-title">
+  <div class="container">
+
+    <p class="section-tag">Client Stories</p>
+    <h2 class="section-title split-text" id="reviews-title" data-splitting>
+      Heard from<br>real clients
+    </h2>
+
+    <div class="reviews__grid" role="list">
+
+      <figure class="review-card" role="listitem">
+        <div class="review-card__stars" aria-label="5 stars">★★★★★</div>
+        <blockquote class="review-card__quote">
+          "QP Photography exceeded every expectation. The maternity shoot felt so relaxed
+          and natural — the photos are absolutely breathtaking. Will be back for the newborn shoot."
+        </blockquote>
+        <figcaption class="review-card__author">
+          <span class="review-card__name">Adaeze O.</span>
+          <span class="review-card__type">Maternity Session</span>
+        </figcaption>
+      </figure>
+
+      <figure class="review-card" role="listitem">
+        <div class="review-card__stars" aria-label="5 stars">★★★★★</div>
+        <blockquote class="review-card__quote">
+          "Used QP for our company's team headshots. Professional setup, quick turnaround,
+          and every member of the team looked great. The LinkedIn engagement speaks for itself."
+        </blockquote>
+        <figcaption class="review-card__author">
+          <span class="review-card__name">Emeka T.</span>
+          <span class="review-card__type">Corporate Headshots</span>
+        </figcaption>
+      </figure>
+
+      <figure class="review-card" role="listitem">
+        <div class="review-card__stars" aria-label="5 stars">★★★★★</div>
+        <blockquote class="review-card__quote">
+          "Covered our daughter's naming ceremony beautifully. Every key moment was captured —
+          we didn't miss a thing. Highly recommend for events in Lagos."
+        </blockquote>
+        <figcaption class="review-card__author">
+          <span class="review-card__name">Funke B.</span>
+          <span class="review-card__type">Events &amp; Ceremony</span>
+        </figcaption>
+      </figure>
+
+    </div>
+
+    <div class="reviews__meta">
+      <a href="https://maps.google.com/?q=QP+Photography+Studio+Lakowe+Lagos" class="reviews__link" target="_blank" rel="noopener noreferrer">
+        <span class="reviews__score">4.7</span>
+        <span class="reviews__stars" aria-hidden="true">★★★★★</span>
+        <span class="reviews__count">44 Google Reviews</span>
+        <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M2.5 7H11.5M11.5 7L8 3.5M11.5 7L8 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Closing CTA banner -->
+<section class="cta-banner" aria-labelledby="cta-headline">
+  <div class="cta-banner__glow" aria-hidden="true"></div>
+  <div class="cta-banner__grain" aria-hidden="true"></div>
+  <div class="container" style="position: relative;">
+    <p class="cta-banner__tag">Ready when you are</p>
+    <h2 class="cta-banner__headline split-text" id="cta-headline" data-splitting>
+      Your story deserves<br>to be seen.
+    </h2>
+    <div class="cta-banner__actions">
+      <a href="https://wa.me/2348162905182" class="btn-primary" target="_blank" rel="noopener noreferrer">
+        Book on WhatsApp
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M2.5 7H11.5M11.5 7L8 3.5M11.5 7L8 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a href="tel:08162905182" class="btn-ghost">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 11.5 19.79 19.79 0 01.86 2.86 2 2 0 012.83 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 8.64a16 16 0 006.29 6.29l1-1a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        0816 290 5182
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+
+    <div class="footer__grid">
+
+      <div>
+        <a href="#" class="nav__logo" aria-label="QP Photography Studio home">
+          <span class="nav__logo-mark" aria-hidden="true">QP</span>
+          QP Photography
+        </a>
+        <p class="footer__brand-copy">
+          Professional photography studio in Lakowe, Lagos. Trusted by families,
+          professionals, and brands with a 4.7-star Google rating.
+        </p>
+        <address class="footer__address">
+          T Jay Plaza, km42 Lekki–Epe Expressway<br>
+          Lakowe 105101 · Open 9am – 9pm Daily
+        </address>
+      </div>
+
+      <div>
+        <h3 class="footer__col-head">Services</h3>
+        <ul class="footer__col-links">
+          <li><a href="#services">Corporate</a></li>
+          <li><a href="#services">Events & Parties</a></li>
+          <li><a href="#services">Family & Group</a></li>
+          <li><a href="#services">Headshots</a></li>
+          <li><a href="#services">Maternity</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer__col-head">Studio</h3>
+        <ul class="footer__col-links">
+          <li><a href="#process">How It Works</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="https://maps.google.com/?q=QP+Photography+Studio+Lakowe+Lagos" target="_blank" rel="noopener noreferrer">Find Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer__col-head">Contact</h3>
+        <ul class="footer__col-links">
+          <li><a href="tel:08162905182">0816 290 5182</a></li>
+          <li><a href="https://wa.me/2348162905182" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+          <li><a href="#" aria-label="Studio address">Lakowe, Lagos</a></li>
+          <li><a href="#" aria-label="Opening hours">9am – 9pm Daily</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bar">
+      <p class="footer__copy">
+        © 2025 QP Photography Studio · Lakowe, Lagos, Nigeria
+      </p>
+      <div class="footer__social" role="list" aria-label="Social media links">
+
+        <a href="#" class="footer__social-link" aria-label="Instagram" role="listitem" target="_blank" rel="noopener noreferrer">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/>
+          </svg>
+        </a>
+
+        <a href="#" class="footer__social-link" aria-label="Facebook" role="listitem" target="_blank" rel="noopener noreferrer">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+
+        <a href="https://wa.me/2348162905182" class="footer__social-link" aria-label="WhatsApp" role="listitem" target="_blank" rel="noopener noreferrer">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- Third-party libraries -->
+<script src="https://cdn.jsdelivr.net/npm/splitting@1.0.6/dist/splitting.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+
+<!-- Site scripts -->
+<script src="qp-photography.js"></script>
+</body>
+</html>
