@@ -257,4 +257,52 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', () => toggleMenu(false))
   );
 
+  // --- Built By Badge (mSeven) Logic ---
+  (() => {
+    const badgeWrapper = document.getElementById('m7-badge-wrapper');
+    const badgeBtn     = document.getElementById('m7-badge-btn');
+    const badgeCard    = document.getElementById('m7-badge-card');
+    const badgeHint    = document.getElementById('m7-badge-hint');
+
+    if (!badgeWrapper || !badgeBtn || !badgeCard) return;
+
+    const toggleBadge = (open) => {
+      if (open) {
+        badgeCard.classList.add('is-open');
+        badgeCard.setAttribute('aria-hidden', 'false');
+        badgeBtn.setAttribute('aria-expanded', 'true');
+        if (badgeHint) {
+          badgeHint.classList.add('hidden');
+        }
+      } else {
+        badgeCard.classList.remove('is-open');
+        badgeCard.setAttribute('aria-hidden', 'true');
+        badgeBtn.setAttribute('aria-expanded', 'false');
+        if (badgeHint) {
+          badgeHint.classList.remove('hidden');
+        }
+      }
+    };
+
+    badgeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = badgeCard.classList.contains('is-open');
+      toggleBadge(!isOpen);
+    });
+
+    // Close badge when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!badgeWrapper.contains(e.target)) {
+        toggleBadge(false);
+      }
+    });
+
+    // Close badge when pressing Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        toggleBadge(false);
+      }
+    });
+  })();
+
 });
