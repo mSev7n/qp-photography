@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wangers Aura — Photography Studio</title>
-  <meta name="description" content="Wangers Aura captures moments, emotions, and stories through creative and professional photography. Portraits, events, fashion, lifestyle and more.">
+  <meta name="description"
+    content="Wangers Aura captures moments, emotions, and stories through creative and professional photography. Portraits, events, fashion, lifestyle and more.">
 
   <!-- Clash Display + Satoshi from Fontshare -->
   <link rel="preconnect" href="https://api.fontshare.com">
@@ -21,682 +23,704 @@
   <!-- Site styles -->
   <link rel="stylesheet" href="wangers-aura.css">
 </head>
+
 <body>
 
-<!-- Scroll progress ribbon -->
-<div id="scroll-ribbon"></div>
+  <!-- Scroll progress ribbon -->
+  <div id="scroll-ribbon"></div>
 
-<!-- Navigation -->
-<nav class="nav" id="nav" role="navigation">
-  <div class="container">
-    <div class="nav__row">
-
-      <a href="#" class="nav__logo" aria-label="Wangers Aura home">
-        <span class="nav__logo-mark" aria-hidden="true">WA</span>
-        Wangers Aura
-      </a>
-
-      <ul class="nav__links" role="list">
-        <li><a href="#process">Process</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
-
-      <div class="nav__cta-wrap">
-        <a href="https://wa.me/2348057924212" class="btn-primary" target="_blank" rel="noopener noreferrer">
-          Book a Session
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-            <path d="M2.5 7H11.5M11.5 7L8 3.5M11.5 7L8 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
-      </div>
-
-      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-    </div>
-  </div>
-</nav>
-
-<!-- Mobile nav overlay -->
-<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
-  <a href="#process"  class="m-link">Process</a>
-  <a href="#services" class="m-link">Services</a>
-  <a href="#gallery"  class="m-link">Gallery</a>
-  <a href="#reviews"  class="m-link">Reviews</a>
-  <a href="#faq"      class="m-link">FAQ</a>
-  <a href="https://wa.me/2348057924212" class="btn-primary m-link" target="_blank" rel="noopener noreferrer">
-    Book on WhatsApp
-  </a>
-</nav>
-
-
-<!-- Hero -->
-<section class="hero" id="hero" aria-labelledby="hero-headline">
-  <canvas id="hero-canvas" aria-hidden="true"></canvas>
-  <div class="hero__vignette" aria-hidden="true"></div>
-
-  <div class="container" style="position:relative; z-index:2;">
-    <div class="hero__content">
-
-      <p class="hero__eyebrow">Wangers Aura — Photography Studio</p>
-
-      <h1 class="hero__headline split-text" id="hero-headline" data-splitting>
-        Every Frame,<br>
-        <em>A Story</em><br>
-        Worth Keeping.
-      </h1>
-
-      <p class="hero__sub">
-        Wangers Aura captures moments, emotions, and stories through creative and
-        professional photography — turning ordinary moments into timeless memories
-        that reflect authenticity, personality, and beauty.
-      </p>
-
-      <div class="hero__actions">
-        <a href="https://wa.me/2348057924212" class="btn-primary" target="_blank" rel="noopener noreferrer">
-          Book Your Session
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-            <path d="M2.5 7H11.5M11.5 7L8 3.5M11.5 7L8 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
-        <a href="https://www.instagram.com/wangers_aura" class="btn-ghost" target="_blank" rel="noopener noreferrer">
-          @wangers_aura
-        </a>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="hero__stats-bar" aria-hidden="true">
+  <!-- Navigation -->
+  <nav class="nav" id="nav" role="navigation">
     <div class="container">
-      <div class="hero__stats">
-        <div class="hero__stat">
-          <div class="hero__stat-value">7</div>
-          <div class="hero__stat-label">Signature Services</div>
-        </div>
-        <div class="hero__stat">
-          <div class="hero__stat-value">100%</div>
-          <div class="hero__stat-label">Custom Direction</div>
-        </div>
-        <div class="hero__stat">
-          <div class="hero__stat-value">Pro</div>
-          <div class="hero__stat-label">Editing & Retouch</div>
-        </div>
-        <div class="hero__stat">
-          <div class="hero__stat-value">48h</div>
-          <div class="hero__stat-label">Gallery Delivery</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      <div class="nav__row">
 
-
-<!-- Marquee strip -->
-<div class="marquee-strip" aria-hidden="true">
-  <div class="marquee__track">
-    <span class="marquee__item">Portrait Photography<span class="marquee__sep"></span></span>
-    <span class="marquee__item">Event Photography<span class="marquee__sep"></span></span>
-    <span class="marquee__item">Lifestyle Photography<span class="marquee__sep"></span></span>
-    <span class="marquee__item">Fashion Photography<span class="marquee__sep"></span></span>
-    <span class="marquee__item">Outdoor Photoshoots<span class="marquee__sep"></span></span>
-    <span class="marquee__item">Photo Editing & Retouching<span class="marquee__sep"></span></span>
-    <span class="marquee__item">Custom Sessions<span class="marquee__sep"></span></span>
-    <span class="marquee__item">Portrait Photography<span class="marquee__sep"></span></span>
-    <span class="marquee__item">Event Photography<span class="marquee__sep"></span></span>
-    <span class="marquee__item">Lifestyle Photography<span class="marquee__sep"></span></span>
-    <span class="marquee__item">Fashion Photography<span class="marquee__sep"></span></span>
-    <span class="marquee__item">Outdoor Photoshoots<span class="marquee__sep"></span></span>
-    <span class="marquee__item">Photo Editing & Retouching<span class="marquee__sep"></span></span>
-    <span class="marquee__item">Custom Sessions<span class="marquee__sep"></span></span>
-  </div>
-</div>
-
-
-<!-- How It Works -->
-<section class="section" id="process" aria-labelledby="process-title">
-  <div class="container">
-
-    <p class="section-tag">The Process</p>
-    <h2 class="section-title split-text" id="process-title" data-splitting>
-      Booking to<br>beautiful gallery
-    </h2>
-    <p style="color: var(--text-secondary); max-width: 460px; line-height: 1.75;">
-      Three steps, no friction. We handle the creative direction —
-      you just show up and be yourself.
-    </p>
-
-    <div style="margin-top: var(--sp-xl);">
-
-      <article class="hiw__step">
-        <div class="hiw__step-copy">
-          <div class="hiw__step-num" aria-hidden="true">01</div>
-          <p class="hiw__step-tag">Step One</p>
-          <h3 class="hiw__step-title">Choose a Session & Lock In Your Date</h3>
-          <p class="hiw__step-desc">
-            Pick your session type — portrait, event, lifestyle, fashion, or a fully
-            custom shoot — and reach us via WhatsApp, call, or email. We'll confirm
-            your slot and the creative direction.
-          </p>
-        </div>
-        <div class="hiw__step-visual">
-          <img class="hiw__step-img" src="images/portrait-2.jpg" alt="Planning a Wangers Aura photo session" loading="lazy" />
-          <span class="hiw__step-badge">Booking</span>
-        </div>
-      </article>
-
-      <article class="hiw__step">
-        <div class="hiw__step-copy">
-          <div class="hiw__step-num" aria-hidden="true">02</div>
-          <p class="hiw__step-tag">Step Two</p>
-          <h3 class="hiw__step-title">Show Up — We Direct Everything</h3>
-          <p class="hiw__step-desc">
-            Arrive relaxed. We take care of lighting, posing, and the full creative
-            direction. We guide camera-shy subjects and capture genuine emotion —
-            never stiff or forced.
-          </p>
-        </div>
-        <div class="hiw__step-visual">
-          <img class="hiw__step-img" src="images/portrait-4.jpg" alt="On-set photography direction by Wangers Aura" loading="lazy" />
-          <span class="hiw__step-badge">The Shoot</span>
-        </div>
-      </article>
-
-      <article class="hiw__step">
-        <div class="hiw__step-copy">
-          <div class="hiw__step-num" aria-hidden="true">03</div>
-          <p class="hiw__step-tag">Step Three</p>
-          <h3 class="hiw__step-title">Receive a Gallery, Ready to Share</h3>
-          <p class="hiw__step-desc">
-            Within 48–72 hours, you receive a professionally retouched gallery.
-            Print-ready resolution, thoughtful editing — images crafted with
-            attention to detail and artistic vision.
-          </p>
-        </div>
-        <div class="hiw__step-visual">
-          <img class="hiw__step-img" src="images/portrait-6.jpg" alt="Final retouched gallery delivered by Wangers Aura" loading="lazy" />
-          <span class="hiw__step-badge">Delivery</span>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- Services -->
-<section class="section benefits" id="services" aria-labelledby="benefits-title">
-  <div class="container">
-
-    <p class="section-tag">Services</p>
-    <h2 class="section-title split-text" id="benefits-title" data-splitting>
-      Built for every<br>moment that matters
-    </h2>
-
-    <div class="benefits__grid" role="list">
-
-      <div class="benefit-card" role="listitem">
-        <div class="benefit-card__icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <circle cx="12" cy="9" r="4" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M4 21a8 8 0 0116 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <h3 class="benefit-card__title">Portrait Photography</h3>
-        <p class="benefit-card__desc">
-          Studio and natural-light portraits crafted to reveal personality —
-          headshots, creative portraits, and signature looks.
-        </p>
-      </div>
-
-      <div class="benefit-card" role="listitem">
-        <div class="benefit-card__icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M3 9h18" stroke="currentColor" stroke-width="1.5"/>
-          </svg>
-        </div>
-        <h3 class="benefit-card__title">Event Photography</h3>
-        <p class="benefit-card__desc">
-          Weddings, parties, ceremonies, and brand activations — every key
-          moment captured with cinematic clarity.
-        </p>
-      </div>
-
-      <div class="benefit-card" role="listitem">
-        <div class="benefit-card__icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <path d="M12 2l2.9 5.8 6.4.9-4.6 4.5 1.1 6.3L12 16.8l-5.8 2.7 1.1-6.3L2.7 8.7l6.4-.9z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <h3 class="benefit-card__title">Lifestyle Photography</h3>
-        <p class="benefit-card__desc">
-          Authentic, story-driven imagery that captures real life —
-          relaxed sessions for individuals, couples, and families.
-        </p>
-      </div>
-
-      <div class="benefit-card" role="listitem">
-        <div class="benefit-card__icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <path d="M6 3l3 6h6l3-6M5 9l7 12 7-12" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <h3 class="benefit-card__title">Fashion Photography</h3>
-        <p class="benefit-card__desc">
-          Editorial-grade fashion sessions for designers, models, and
-          brands — campaign, lookbook, and portfolio shoots.
-        </p>
-      </div>
-
-      <div class="benefit-card" role="listitem">
-        <div class="benefit-card__icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <path d="M3 19l5-7 4 5 3-4 6 6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-            <circle cx="8" cy="7" r="2" stroke="currentColor" stroke-width="1.5"/>
-          </svg>
-        </div>
-        <h3 class="benefit-card__title">Outdoor Photoshoots</h3>
-        <p class="benefit-card__desc">
-          Golden-hour location sessions that use light, landscape, and
-          environment to tell a richer story.
-        </p>
-      </div>
-
-      <div class="benefit-card" role="listitem">
-        <div class="benefit-card__icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <path d="M4 20l4-1 10-10-3-3L5 16l-1 4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <h3 class="benefit-card__title">Editing & Retouching</h3>
-        <p class="benefit-card__desc">
-          Professional colour grading and high-end retouching delivered
-          to a print-ready, magazine standard.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- Gallery preview -->
-<section class="section gallery" id="gallery" aria-labelledby="gallery-title">
-  <div class="container">
-
-    <p class="section-tag">The Work</p>
-    <h2 class="section-title split-text" id="gallery-title" data-splitting>
-      Moments that<br>outlast memory
-    </h2>
-
-    <div class="gallery__grid" role="list" aria-label="Wangers Aura portfolio samples">
-
-      <div class="gallery__cell" role="listitem" tabindex="0" aria-label="Portrait session">
-        <img class="gallery__img" src="images/portrait-1.jpg" alt="Studio portrait by Wangers Aura" loading="lazy">
-        <div class="gallery__hover" aria-hidden="true">
-          <span class="gallery__genre">Portrait</span>
-        </div>
-      </div>
-
-      <div class="gallery__cell" role="listitem" tabindex="0" aria-label="Fashion session">
-        <img class="gallery__img" src="images/portrait-2.jpg" alt="Fashion portrait by Wangers Aura" loading="lazy">
-        <div class="gallery__hover" aria-hidden="true">
-          <span class="gallery__genre">Fashion</span>
-        </div>
-      </div>
-
-      <div class="gallery__cell" role="listitem" tabindex="0" aria-label="Black and white portrait">
-        <img class="gallery__img" src="images/portrait-3.jpg" alt="Black and white portrait by Wangers Aura" loading="lazy">
-        <div class="gallery__hover" aria-hidden="true">
-          <span class="gallery__genre">Editorial</span>
-        </div>
-      </div>
-
-      <div class="gallery__cell" role="listitem" tabindex="0" aria-label="Lifestyle portrait">
-        <img class="gallery__img" src="images/portrait-4.jpg" alt="Lifestyle portrait by Wangers Aura" loading="lazy">
-        <div class="gallery__hover" aria-hidden="true">
-          <span class="gallery__genre">Lifestyle</span>
-        </div>
-      </div>
-
-      <div class="gallery__cell" role="listitem" tabindex="0" aria-label="Studio session">
-        <img class="gallery__img" src="images/portrait-5.jpg" alt="Studio portrait by Wangers Aura" loading="lazy">
-        <div class="gallery__hover" aria-hidden="true">
-          <span class="gallery__genre">Studio</span>
-        </div>
-      </div>
-
-      <div class="gallery__cell" role="listitem" tabindex="0" aria-label="Outdoor session">
-        <img class="gallery__img" src="images/portrait-6.jpg" alt="Creative portrait by Wangers Aura" loading="lazy">
-        <div class="gallery__hover" aria-hidden="true">
-          <span class="gallery__genre">Creative</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- FAQ -->
-<section class="section faq" id="faq" aria-labelledby="faq-title">
-  <div class="container">
-
-    <p class="section-tag">FAQ</p>
-    <h2 class="section-title split-text" id="faq-title" data-splitting>
-      Questions we<br>hear most often
-    </h2>
-
-    <div class="faq__list" role="list">
-
-      <div class="faq__item" role="listitem">
-        <button class="faq__q" aria-expanded="false">
-          What photography services do you offer?
-          <span class="faq__icon-wrap" aria-hidden="true">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-              <path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </span>
-        </button>
-        <div class="faq__body" role="region">
-          <p class="faq__body-text">
-            We cover portrait photography, event coverage, lifestyle and fashion sessions,
-            outdoor photoshoots, professional photo editing & retouching, and fully
-            custom photography sessions tailored to your vision.
-          </p>
-        </div>
-      </div>
-
-      <div class="faq__item" role="listitem">
-        <button class="faq__q" aria-expanded="false">
-          How do I book a session?
-          <span class="faq__icon-wrap" aria-hidden="true">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-              <path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </span>
-        </button>
-        <div class="faq__body" role="region">
-          <p class="faq__body-text">
-            The quickest way is via WhatsApp — tap any "Book" button on this page to
-            connect directly. You can also call us on 0805 792 4212 or send a note to
-            wangerphilips7@gmail.com.
-          </p>
-        </div>
-      </div>
-
-      <div class="faq__item" role="listitem">
-        <button class="faq__q" aria-expanded="false">
-          Do you shoot on location?
-          <span class="faq__icon-wrap" aria-hidden="true">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-              <path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </span>
-        </button>
-        <div class="faq__body" role="region">
-          <p class="faq__body-text">
-            Yes — we cover events, outdoor portraits, fashion shoots, and custom sessions
-            on location. Reach out with your date, location, and the kind of session you
-            have in mind and we'll confirm the logistics.
-          </p>
-        </div>
-      </div>
-
-      <div class="faq__item" role="listitem">
-        <button class="faq__q" aria-expanded="false">
-          How long until I get my edited photos?
-          <span class="faq__icon-wrap" aria-hidden="true">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-              <path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </span>
-        </button>
-        <div class="faq__body" role="region">
-          <p class="faq__body-text">
-            Standard turnaround is 48–72 hours after your session. Rush delivery is
-            available for time-sensitive projects — just flag it when booking and we'll
-            accommodate.
-          </p>
-        </div>
-      </div>
-
-      <div class="faq__item" role="listitem">
-        <button class="faq__q" aria-expanded="false">
-          Can I request a custom photography session?
-          <span class="faq__icon-wrap" aria-hidden="true">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-              <path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </span>
-        </button>
-        <div class="faq__body" role="region">
-          <p class="faq__body-text">
-            Absolutely. Custom sessions are one of our signature services — share your
-            concept, mood, or reference and we'll build a shoot around it from creative
-            direction through to final retouching.
-          </p>
-        </div>
-      </div>
-
-      <div class="faq__item" role="listitem">
-        <button class="faq__q" aria-expanded="false">
-          What should I wear to my session?
-          <span class="faq__icon-wrap" aria-hidden="true">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-              <path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </span>
-        </button>
-        <div class="faq__body" role="region">
-          <p class="faq__body-text">
-            Solid, complementary tones work great for portraits. For fashion and
-            lifestyle, bring pieces that reflect your personality. We'll share a prep
-            guide once you book — most importantly, come relaxed and let us handle
-            the rest.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- Testimonials -->
-<section class="section testimonials" id="reviews" aria-labelledby="reviews-title">
-  <div class="container">
-
-    <p class="section-tag">Client Stories</p>
-    <h2 class="section-title split-text" id="reviews-title" data-splitting>
-      Heard from<br>real clients
-    </h2>
-
-    <div class="reviews__grid" role="list">
-
-      <figure class="review-card" role="listitem">
-        <div class="review-card__stars" aria-label="5 stars">★★★★★</div>
-        <blockquote class="review-card__quote">
-          "Wangers Aura made me feel completely at ease — the portraits came out
-          beyond what I imagined. Every detail felt intentional and the final
-          gallery is something I'll keep forever."
-        </blockquote>
-        <figcaption class="review-card__author">
-          <span class="review-card__name">Adaeze O.</span>
-          <span class="review-card__type">Portrait Session</span>
-        </figcaption>
-      </figure>
-
-      <figure class="review-card" role="listitem">
-        <div class="review-card__stars" aria-label="5 stars">★★★★★</div>
-        <blockquote class="review-card__quote">
-          "Booked Wangers Aura for a fashion shoot and the direction, lighting, and
-          editing were on another level. The images speak for themselves — clean,
-          editorial, and full of mood."
-        </blockquote>
-        <figcaption class="review-card__author">
-          <span class="review-card__name">Emeka T.</span>
-          <span class="review-card__type">Fashion Shoot</span>
-        </figcaption>
-      </figure>
-
-      <figure class="review-card" role="listitem">
-        <div class="review-card__stars" aria-label="5 stars">★★★★★</div>
-        <blockquote class="review-card__quote">
-          "Covered our event beautifully — every important moment was captured.
-          Professional, fast with delivery, and the retouching was flawless.
-          Highly recommend."
-        </blockquote>
-        <figcaption class="review-card__author">
-          <span class="review-card__name">Funke B.</span>
-          <span class="review-card__type">Event Coverage</span>
-        </figcaption>
-      </figure>
-
-    </div>
-
-    <div class="reviews__meta">
-      <a href="https://www.instagram.com/wangers_aura" class="reviews__link" target="_blank" rel="noopener noreferrer">
-        <span class="reviews__stars" aria-hidden="true">★★★★★</span>
-        <span class="reviews__count">See more on Instagram</span>
-        <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-          <path d="M2.5 7H11.5M11.5 7L8 3.5M11.5 7L8 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- Closing CTA banner -->
-<section class="cta-banner" aria-labelledby="cta-headline">
-  <div class="cta-banner__glow" aria-hidden="true"></div>
-  <div class="cta-banner__grain" aria-hidden="true"></div>
-  <div class="container" style="position: relative;">
-    <p class="cta-banner__tag">Ready when you are</p>
-    <h2 class="cta-banner__headline split-text" id="cta-headline" data-splitting>
-      Your story deserves<br>to be seen.
-    </h2>
-    <div class="cta-banner__actions">
-      <a href="https://wa.me/2348057924212" class="btn-primary" target="_blank" rel="noopener noreferrer">
-        Book on WhatsApp
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-          <path d="M2.5 7H11.5M11.5 7L8 3.5M11.5 7L8 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
-      <a href="tel:08057924212" class="btn-ghost">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 11.5 19.79 19.79 0 01.86 2.86 2 2 0 012.83 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 8.64a16 16 0 006.29 6.29l1-1a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        0805 792 4212
-      </a>
-    </div>
-  </div>
-</section>
-
-
-<!-- Footer -->
-<footer class="footer" role="contentinfo">
-  <div class="container">
-
-    <div class="footer__grid">
-
-      <div>
         <a href="#" class="nav__logo" aria-label="Wangers Aura home">
           <span class="nav__logo-mark" aria-hidden="true">WA</span>
           Wangers Aura
         </a>
-        <p class="footer__brand-copy">
-          Capturing moments, emotions, and stories through creative and
-          professional photography — turning ordinary moments into timeless memories.
-        </p>
-        <address class="footer__address">
-          0805 792 4212<br>
-          wangerphilips7@gmail.com
-        </address>
-      </div>
 
-      <div>
-        <h3 class="footer__col-head">Services</h3>
-        <ul class="footer__col-links">
-          <li><a href="#services">Portrait</a></li>
-          <li><a href="#services">Events</a></li>
-          <li><a href="#services">Lifestyle</a></li>
-          <li><a href="#services">Fashion</a></li>
-          <li><a href="#services">Outdoor</a></li>
-          <li><a href="#services">Editing & Retouching</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="footer__col-head">Studio</h3>
-        <ul class="footer__col-links">
-          <li><a href="#process">How It Works</a></li>
+        <ul class="nav__links" role="list">
+          <li><a href="#process">Process</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#reviews">Reviews</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
-      </div>
 
-      <div>
-        <h3 class="footer__col-head">Contact</h3>
-        <ul class="footer__col-links">
-          <li><a href="tel:08057924212">0805 792 4212</a></li>
-          <li><a href="mailto:wangerphilips7@gmail.com">Email</a></li>
-          <li><a href="https://wa.me/2348057924212" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
-          <li><a href="https://www.instagram.com/wangers_aura" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        </ul>
-      </div>
+        <div class="nav__cta-wrap">
+          <a href="https://wa.me/2348057924212" class="btn-primary" target="_blank" rel="noopener noreferrer">
+            Book a Session
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2.5 7H11.5M11.5 7L8 3.5M11.5 7L8 10.5" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
 
-    </div>
-
-    <div class="footer__bar">
-      <p class="footer__copy">
-        © 2026 Wangers Aura · Photography Studio
-      </p>
-      <div class="footer__social" role="list" aria-label="Social media links">
-
-        <a href="https://www.instagram.com/wangers_aura" class="footer__social-link" aria-label="Instagram" role="listitem" target="_blank" rel="noopener noreferrer">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
-            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
-            <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/>
-          </svg>
-        </a>
-
-        <a href="https://www.facebook.com/share/18cfvAiwXL/" class="footer__social-link" aria-label="Facebook" role="listitem" target="_blank" rel="noopener noreferrer">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
-
-        <a href="https://wa.me/2348057924212" class="footer__social-link" aria-label="WhatsApp" role="listitem" target="_blank" rel="noopener noreferrer">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
+        <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
 
       </div>
     </div>
+  </nav>
 
+  <!-- Mobile nav overlay -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="#process" class="m-link">Process</a>
+    <a href="#services" class="m-link">Services</a>
+    <a href="#gallery" class="m-link">Gallery</a>
+    <a href="#reviews" class="m-link">Reviews</a>
+    <a href="#faq" class="m-link">FAQ</a>
+    <a href="https://wa.me/2348057924212" class="btn-primary m-link" target="_blank" rel="noopener noreferrer">
+      Book on WhatsApp
+    </a>
+  </nav>
+
+
+  <!-- Hero -->
+  <section class="hero" id="hero" aria-labelledby="hero-headline">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero__vignette" aria-hidden="true"></div>
+
+    <div class="container" style="position:relative; z-index:2;">
+      <div class="hero__content">
+
+        <p class="hero__eyebrow">Wangers Aura — Photography Studio</p>
+
+        <h1 class="hero__headline split-text" id="hero-headline" data-splitting>
+          Every Frame,<br>
+          <em>A Story</em><br>
+          Worth Keeping.
+        </h1>
+
+        <p class="hero__sub">
+          Wangers Aura captures moments, emotions, and stories through creative and
+          professional photography — turning ordinary moments into timeless memories
+          that reflect authenticity, personality, and beauty.
+        </p>
+
+        <div class="hero__actions">
+          <a href="https://wa.me/2348057924212" class="btn-primary" target="_blank" rel="noopener noreferrer">
+            Book Your Session
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2.5 7H11.5M11.5 7L8 3.5M11.5 7L8 10.5" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/wangers_aura" class="btn-ghost" target="_blank" rel="noopener noreferrer">
+            @wangers_aura
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="hero__stats-bar" aria-hidden="true">
+      <div class="container">
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <div class="hero__stat-value">7</div>
+            <div class="hero__stat-label">Signature Services</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-value">100%</div>
+            <div class="hero__stat-label">Custom Direction</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-value">Pro</div>
+            <div class="hero__stat-label">Editing & Retouch</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-value">48h</div>
+            <div class="hero__stat-label">Gallery Delivery</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Marquee strip -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item">Portrait Photography<span class="marquee__sep"></span></span>
+      <span class="marquee__item">Event Photography<span class="marquee__sep"></span></span>
+      <span class="marquee__item">Lifestyle Photography<span class="marquee__sep"></span></span>
+      <span class="marquee__item">Fashion Photography<span class="marquee__sep"></span></span>
+      <span class="marquee__item">Outdoor Photoshoots<span class="marquee__sep"></span></span>
+      <span class="marquee__item">Photo Editing & Retouching<span class="marquee__sep"></span></span>
+      <span class="marquee__item">Custom Sessions<span class="marquee__sep"></span></span>
+      <span class="marquee__item">Portrait Photography<span class="marquee__sep"></span></span>
+      <span class="marquee__item">Event Photography<span class="marquee__sep"></span></span>
+      <span class="marquee__item">Lifestyle Photography<span class="marquee__sep"></span></span>
+      <span class="marquee__item">Fashion Photography<span class="marquee__sep"></span></span>
+      <span class="marquee__item">Outdoor Photoshoots<span class="marquee__sep"></span></span>
+      <span class="marquee__item">Photo Editing & Retouching<span class="marquee__sep"></span></span>
+      <span class="marquee__item">Custom Sessions<span class="marquee__sep"></span></span>
+    </div>
   </div>
-</footer>
 
 
-<!-- Third-party libraries -->
-<script src="https://cdn.jsdelivr.net/npm/splitting@1.0.6/dist/splitting.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <!-- How It Works -->
+  <section class="section" id="process" aria-labelledby="process-title">
+    <div class="container">
 
-<!-- Site scripts -->
-<script src="wangers-aura.js"></script>
+      <p class="section-tag">The Process</p>
+      <h2 class="section-title split-text" id="process-title" data-splitting>
+        Booking to<br>beautiful gallery
+      </h2>
+      <p style="color: var(--text-secondary); max-width: 460px; line-height: 1.75;">
+        Three steps, no friction. We handle the creative direction —
+        you just show up and be yourself.
+      </p>
+
+      <div style="margin-top: var(--sp-xl);">
+
+        <article class="hiw__step">
+          <div class="hiw__step-copy">
+            <div class="hiw__step-num" aria-hidden="true">01</div>
+            <p class="hiw__step-tag">Step One</p>
+            <h3 class="hiw__step-title">Choose a Session & Lock In Your Date</h3>
+            <p class="hiw__step-desc">
+              Pick your session type — portrait, event, lifestyle, fashion, or a fully
+              custom shoot — and reach us via WhatsApp, call, or email. We'll confirm
+              your slot and the creative direction.
+            </p>
+          </div>
+          <div class="hiw__step-visual">
+            <img class="hiw__step-img" src="images/portrait-2.jpg" alt="Planning a Wangers Aura photo session"
+              loading="lazy" />
+            <span class="hiw__step-badge">Booking</span>
+          </div>
+        </article>
+
+        <article class="hiw__step">
+          <div class="hiw__step-copy">
+            <div class="hiw__step-num" aria-hidden="true">02</div>
+            <p class="hiw__step-tag">Step Two</p>
+            <h3 class="hiw__step-title">Show Up — We Direct Everything</h3>
+            <p class="hiw__step-desc">
+              Arrive relaxed. We take care of lighting, posing, and the full creative
+              direction. We guide camera-shy subjects and capture genuine emotion —
+              never stiff or forced.
+            </p>
+          </div>
+          <div class="hiw__step-visual">
+            <img class="hiw__step-img" src="images/portrait-10.jpg" alt="On-set photography direction by Wangers Aura"
+              loading="lazy" />
+            <span class="hiw__step-badge">The Shoot</span>
+          </div>
+        </article>
+
+        <article class="hiw__step">
+          <div class="hiw__step-copy">
+            <div class="hiw__step-num" aria-hidden="true">03</div>
+            <p class="hiw__step-tag">Step Three</p>
+            <h3 class="hiw__step-title">Receive a Gallery, Ready to Share</h3>
+            <p class="hiw__step-desc">
+              Within 48–72 hours, you receive a professionally retouched gallery.
+              Print-ready resolution, thoughtful editing — images crafted with
+              attention to detail and artistic vision.
+            </p>
+          </div>
+          <div class="hiw__step-visual">
+            <img class="hiw__step-img" src="images/portrait-6.jpg"
+              alt="Final retouched gallery delivered by Wangers Aura" loading="lazy" />
+            <span class="hiw__step-badge">Delivery</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Services -->
+  <section class="section benefits" id="services" aria-labelledby="benefits-title">
+    <div class="container">
+
+      <p class="section-tag">Services</p>
+      <h2 class="section-title split-text" id="benefits-title" data-splitting>
+        Built for every<br>moment that matters
+      </h2>
+
+      <div class="benefits__grid" role="list">
+
+        <div class="benefit-card" role="listitem">
+          <div class="benefit-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="9" r="4" stroke="currentColor" stroke-width="1.5" />
+              <path d="M4 21a8 8 0 0116 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="benefit-card__title">Portrait Photography</h3>
+          <p class="benefit-card__desc">
+            Studio and natural-light portraits crafted to reveal personality —
+            headshots, creative portraits, and signature looks.
+          </p>
+        </div>
+
+        <div class="benefit-card" role="listitem">
+          <div class="benefit-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5" />
+              <path d="M3 9h18" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+          </div>
+          <h3 class="benefit-card__title">Event Photography</h3>
+          <p class="benefit-card__desc">
+            Weddings, parties, ceremonies, and brand activations — every key
+            moment captured with cinematic clarity.
+          </p>
+        </div>
+
+        <div class="benefit-card" role="listitem">
+          <div class="benefit-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2l2.9 5.8 6.4.9-4.6 4.5 1.1 6.3L12 16.8l-5.8 2.7 1.1-6.3L2.7 8.7l6.4-.9z"
+                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3 class="benefit-card__title">Lifestyle Photography</h3>
+          <p class="benefit-card__desc">
+            Authentic, story-driven imagery that captures real life —
+            relaxed sessions for individuals, couples, and families.
+          </p>
+        </div>
+
+        <div class="benefit-card" role="listitem">
+          <div class="benefit-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M6 3l3 6h6l3-6M5 9l7 12 7-12" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3 class="benefit-card__title">Fashion Photography</h3>
+          <p class="benefit-card__desc">
+            Editorial-grade fashion sessions for designers, models, and
+            brands — campaign, lookbook, and portfolio shoots.
+          </p>
+        </div>
+
+        <div class="benefit-card" role="listitem">
+          <div class="benefit-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M3 19l5-7 4 5 3-4 6 6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+              <circle cx="8" cy="7" r="2" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+          </div>
+          <h3 class="benefit-card__title">Outdoor Photoshoots</h3>
+          <p class="benefit-card__desc">
+            Golden-hour location sessions that use light, landscape, and
+            environment to tell a richer story.
+          </p>
+        </div>
+
+        <div class="benefit-card" role="listitem">
+          <div class="benefit-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M4 20l4-1 10-10-3-3L5 16l-1 4z" stroke="currentColor" stroke-width="1.5"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3 class="benefit-card__title">Editing & Retouching</h3>
+          <p class="benefit-card__desc">
+            Professional colour grading and high-end retouching delivered
+            to a print-ready, magazine standard.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Gallery preview -->
+  <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+    <div class="container">
+
+      <p class="section-tag">The Work</p>
+      <h2 class="section-title split-text" id="gallery-title" data-splitting>
+        Moments that<br>outlast memory
+      </h2>
+
+      <div class="gallery__grid" role="list" aria-label="Wangers Aura portfolio samples">
+
+        <div class="gallery__cell" role="listitem" tabindex="0" aria-label="Portrait session">
+          <img class="gallery__img" src="images/portrait-8.jpg" alt="Studio portrait by Wangers Aura" loading="lazy">
+          <div class="gallery__hover" aria-hidden="true">
+            <span class="gallery__genre">Portrait</span>
+          </div>
+        </div>
+
+        <div class="gallery__cell" role="listitem" tabindex="0" aria-label="Fashion session">
+          <img class="gallery__img" src="images/portrait-1.jpg" alt="Fashion portrait by Wangers Aura" loading="lazy">
+          <div class="gallery__hover" aria-hidden="true">
+            <span class="gallery__genre">Fashion</span>
+          </div>
+        </div>
+
+        <div class="gallery__cell" role="listitem" tabindex="0" aria-label="Black and white portrait">
+          <img class="gallery__img" src="images/portrait-3.jpg" alt="Black and white portrait by Wangers Aura"
+            loading="lazy">
+          <div class="gallery__hover" aria-hidden="true">
+            <span class="gallery__genre">Editorial</span>
+          </div>
+        </div>
+
+        <div class="gallery__cell" role="listitem" tabindex="0" aria-label="Lifestyle portrait">
+          <img class="gallery__img" src="images/portrait-9.jpg" alt="Lifestyle portrait by Wangers Aura" loading="lazy">
+          <div class="gallery__hover" aria-hidden="true">
+            <span class="gallery__genre">Lifestyle</span>
+          </div>
+        </div>
+
+        <div class="gallery__cell" role="listitem" tabindex="0" aria-label="Studio session">
+          <img class="gallery__img" src="images/portrait-5.jpg" alt="Studio portrait by Wangers Aura" loading="lazy">
+          <div class="gallery__hover" aria-hidden="true">
+            <span class="gallery__genre">Studio</span>
+          </div>
+        </div>
+
+        <div class="gallery__cell" role="listitem" tabindex="0" aria-label="Outdoor session">
+          <img class="gallery__img" src="images/portrait-4.jpg" alt="Creative portrait by Wangers Aura" loading="lazy">
+          <div class="gallery__hover" aria-hidden="true">
+            <span class="gallery__genre">Creative</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FAQ -->
+  <section class="section faq" id="faq" aria-labelledby="faq-title">
+    <div class="container">
+
+      <p class="section-tag">FAQ</p>
+      <h2 class="section-title split-text" id="faq-title" data-splitting>
+        Questions we<br>hear most often
+      </h2>
+
+      <div class="faq__list" role="list">
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__q" aria-expanded="false">
+            What photography services do you offer?
+            <span class="faq__icon-wrap" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq__body" role="region">
+            <p class="faq__body-text">
+              We cover portrait photography, event coverage, lifestyle and fashion sessions,
+              outdoor photoshoots, professional photo editing & retouching, and fully
+              custom photography sessions tailored to your vision.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__q" aria-expanded="false">
+            How do I book a session?
+            <span class="faq__icon-wrap" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq__body" role="region">
+            <p class="faq__body-text">
+              The quickest way is via WhatsApp — tap any "Book" button on this page to
+              connect directly. You can also call us on 0805 792 4212 or send a note to
+              wangerphilips7@gmail.com.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__q" aria-expanded="false">
+            Do you shoot on location?
+            <span class="faq__icon-wrap" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq__body" role="region">
+            <p class="faq__body-text">
+              Yes — we cover events, outdoor portraits, fashion shoots, and custom sessions
+              on location. Reach out with your date, location, and the kind of session you
+              have in mind and we'll confirm the logistics.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__q" aria-expanded="false">
+            How long until I get my edited photos?
+            <span class="faq__icon-wrap" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq__body" role="region">
+            <p class="faq__body-text">
+              Standard turnaround is 48–72 hours after your session. Rush delivery is
+              available for time-sensitive projects — just flag it when booking and we'll
+              accommodate.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__q" aria-expanded="false">
+            Can I request a custom photography session?
+            <span class="faq__icon-wrap" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq__body" role="region">
+            <p class="faq__body-text">
+              Absolutely. Custom sessions are one of our signature services — share your
+              concept, mood, or reference and we'll build a shoot around it from creative
+              direction through to final retouching.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item" role="listitem">
+          <button class="faq__q" aria-expanded="false">
+            What should I wear to my session?
+            <span class="faq__icon-wrap" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq__body" role="region">
+            <p class="faq__body-text">
+              Solid, complementary tones work great for portraits. For fashion and
+              lifestyle, bring pieces that reflect your personality. We'll share a prep
+              guide once you book — most importantly, come relaxed and let us handle
+              the rest.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+  <section class="section testimonials" id="reviews" aria-labelledby="reviews-title">
+    <div class="container">
+
+      <p class="section-tag">Client Stories</p>
+      <h2 class="section-title split-text" id="reviews-title" data-splitting>
+        Heard from<br>real clients
+      </h2>
+
+      <div class="reviews__grid" role="list">
+
+        <figure class="review-card" role="listitem">
+          <div class="review-card__stars" aria-label="5 stars">★★★★★</div>
+          <blockquote class="review-card__quote">
+            "Wangers Aura made me feel completely at ease — the portraits came out
+            beyond what I imagined. Every detail felt intentional and the final
+            gallery is something I'll keep forever."
+          </blockquote>
+          <figcaption class="review-card__author">
+            <span class="review-card__name">Adaeze O.</span>
+            <span class="review-card__type">Portrait Session</span>
+          </figcaption>
+        </figure>
+
+        <figure class="review-card" role="listitem">
+          <div class="review-card__stars" aria-label="5 stars">★★★★★</div>
+          <blockquote class="review-card__quote">
+            "Booked Wangers Aura for a fashion shoot and the direction, lighting, and
+            editing were on another level. The images speak for themselves — clean,
+            editorial, and full of mood."
+          </blockquote>
+          <figcaption class="review-card__author">
+            <span class="review-card__name">Emeka T.</span>
+            <span class="review-card__type">Fashion Shoot</span>
+          </figcaption>
+        </figure>
+
+        <figure class="review-card" role="listitem">
+          <div class="review-card__stars" aria-label="5 stars">★★★★★</div>
+          <blockquote class="review-card__quote">
+            "Covered our event beautifully — every important moment was captured.
+            Professional, fast with delivery, and the retouching was flawless.
+            Highly recommend."
+          </blockquote>
+          <figcaption class="review-card__author">
+            <span class="review-card__name">Funke B.</span>
+            <span class="review-card__type">Event Coverage</span>
+          </figcaption>
+        </figure>
+
+      </div>
+
+      <div class="reviews__meta">
+        <a href="https://www.instagram.com/wangers_aura" class="reviews__link" target="_blank"
+          rel="noopener noreferrer">
+          <span class="reviews__stars" aria-hidden="true">★★★★★</span>
+          <span class="reviews__count">See more on Instagram</span>
+          <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2.5 7H11.5M11.5 7L8 3.5M11.5 7L8 10.5" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Closing CTA banner -->
+  <section class="cta-banner" aria-labelledby="cta-headline">
+    <div class="cta-banner__glow" aria-hidden="true"></div>
+    <div class="cta-banner__grain" aria-hidden="true"></div>
+    <div class="container" style="position: relative;">
+      <p class="cta-banner__tag">Ready when you are</p>
+      <h2 class="cta-banner__headline split-text" id="cta-headline" data-splitting>
+        Your story deserves<br>to be seen.
+      </h2>
+      <div class="cta-banner__actions">
+        <a href="https://wa.me/2348057924212" class="btn-primary" target="_blank" rel="noopener noreferrer">
+          Book on WhatsApp
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2.5 7H11.5M11.5 7L8 3.5M11.5 7L8 10.5" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a href="tel:08057924212" class="btn-ghost">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path
+              d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 11.5 19.79 19.79 0 01.86 2.86 2 2 0 012.83 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 8.64a16 16 0 006.29 6.29l1-1a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          0805 792 4212
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__grid">
+
+        <div>
+          <a href="#" class="nav__logo" aria-label="Wangers Aura home">
+            <span class="nav__logo-mark" aria-hidden="true">WA</span>
+            Wangers Aura
+          </a>
+          <p class="footer__brand-copy">
+            Capturing moments, emotions, and stories through creative and
+            professional photography — turning ordinary moments into timeless memories.
+          </p>
+          <address class="footer__address">
+            0805 792 4212<br>
+            wangerphilips7@gmail.com
+          </address>
+        </div>
+
+        <div>
+          <h3 class="footer__col-head">Services</h3>
+          <ul class="footer__col-links">
+            <li><a href="#services">Portrait</a></li>
+            <li><a href="#services">Events</a></li>
+            <li><a href="#services">Lifestyle</a></li>
+            <li><a href="#services">Fashion</a></li>
+            <li><a href="#services">Outdoor</a></li>
+            <li><a href="#services">Editing & Retouching</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__col-head">Studio</h3>
+          <ul class="footer__col-links">
+            <li><a href="#process">How It Works</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__col-head">Contact</h3>
+          <ul class="footer__col-links">
+            <li><a href="tel:08057924212">0805 792 4212</a></li>
+            <li><a href="mailto:wangerphilips7@gmail.com">Email</a></li>
+            <li><a href="https://wa.me/2348057924212" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="https://www.instagram.com/wangers_aura" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bar">
+        <p class="footer__copy">
+          © 2026 Wangers Aura · Photography Studio
+        </p>
+        <div class="footer__social" role="list" aria-label="Social media links">
+
+          <a href="https://www.instagram.com/wangers_aura" class="footer__social-link" aria-label="Instagram"
+            role="listitem" target="_blank" rel="noopener noreferrer">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" />
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" />
+              <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" />
+            </svg>
+          </a>
+
+          <a href="https://www.facebook.com/share/18cfvAiwXL/" class="footer__social-link" aria-label="Facebook"
+            role="listitem" target="_blank" rel="noopener noreferrer">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+
+          <a href="https://wa.me/2348057924212" class="footer__social-link" aria-label="WhatsApp" role="listitem"
+            target="_blank" rel="noopener noreferrer">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- Third-party libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/splitting@1.0.6/dist/splitting.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+
+  <!-- Site scripts -->
+  <script src="wangers-aura.js"></script>
 </body>
+
 </html>
